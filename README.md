@@ -1,7 +1,7 @@
 ###  js-data-structure
 使用JavaScript实现一些常用的数据结构
 
-### 实现列表
+### 已实现项目
   - [x] 栈
   - [x] 队列
   - [x] 优先级队列
