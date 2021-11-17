@@ -112,11 +112,23 @@ class LinkedList {
     let current = this.head;
     let string = "";
     while (current) {
-      string += `${current.element}`;
+      string += `${current.element} `;
       current = current.next;
     }
     return string;
   }
 }
 
+
+const linkedList = new LinkedList()
+
+console.log(linkedList)
+linkedList.append(2)
+linkedList.append(6)
+linkedList.append(24)
+linkedList.append(152)
+
+linkedList.insert(3, 18)
+console.log(linkedList.toString())
+console.log(linkedList.findIndex(24))
 module.exports = { LinkedList };
