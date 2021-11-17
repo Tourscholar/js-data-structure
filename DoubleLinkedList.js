@@ -36,7 +36,7 @@ class DoublyLinkedList {
           current.prev = node;
         }
         // 如果插入的位置是末尾
-      } else if (position === this.length) {
+      } else if (position === this.length - 1) {
         // 保存末尾元素
         current = this.tail;
         // 将插入的新元素赋值给末尾元素的向下指向
@@ -51,9 +51,9 @@ class DoublyLinkedList {
           previous = current;
           current = current.next;
         }
-        // 将新插入节点的下一个元素赋值给新插入元素的向上指向
+        // 将新插入节点的下一个元素赋值给新插入元素的向下指向
         node.next = current;
-        // 将新插入节点赋值给新插入节点的上一个节点的向上指向
+        // 将新插入节点赋值给新插入节点的上一个节点的向下指向
         previous.next = node;
         // 将新插入节点赋值给新插入节点的下一个节点的向上指向
         current.prev = node;
