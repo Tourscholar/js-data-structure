@@ -38,3 +38,5 @@ class Queue {
     console.log(this.items.toString());
   }
 }
+
+module.exports = { Queue };

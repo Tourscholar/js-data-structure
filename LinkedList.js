@@ -118,3 +118,5 @@ class LinkedList {
     return string;
   }
 }
+
+module.exports = { LinkedList };
